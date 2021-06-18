@@ -47,6 +47,7 @@ June 3, 2021
 
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 class VelocityMaps(object):
@@ -437,7 +438,7 @@ class VelocityMaps(object):
         Parameters
         ----------
         binsize : float
-            Width of the radial bins
+            Width of the radial bins in the units set by self.beta (pixels, arcsec, kpc)
             
         Returns
         -------
@@ -452,8 +453,109 @@ class VelocityMaps(object):
         self.RC_all_bin = self.bin_one_curve(self.RC_all,binsize)
         self.RC_appr_bin = self.bin_one_curve(self.RC_appr,binsize)
         self.RC_receed_bin = self.bin_one_curve(self.RC_receed,binsize)
+        
+        if hasattr(self, "RC_ls"):
+            self.RC_ls_bin = self.bin_one_curve(self.RC_ls,binsize)
+
+            
+    def ls_rotation_curve(self,width):
+        """
+        Creates a long-slit version of the rotation curve. Once all velocity
+        measurements have been de-projected, this function takes only those pixels
+        along the major axis, inside a given slit width.
+        
+        Parameters
+        ----------
+        width : float
+            Slit width. Must be given in the units set by self.beta (pixels, arcsec, kpc)
+        
+        Returns
+        -------
+        sel.RC_ls : ndarray
+            - (M,3) being M the number of valid pixels in the slit
+            - columns are [radius, Vcir, Error_Vcir], ordered by increasing radius
+        """
+        
+        self.get_index_slit(width)
+        self.RC_ls = self.sort_curve(self.r,self.Vc,self.sigmaVc,self.index_ls)
 
         
+    def GET_ALL_CURVES(self,binsize,angle=False,width=False):
+        """
+        Creates up to 4 versions of the rotation curve starting from the instance
+        just created, without the need to invoke anything else. It may include the
+        long-slit flavour of the rotation curve, and may also filter a conic region
+        around the minor axis before . These 2 features are optional. The curves
+        returned are already binned in radius.
         
-
+        Parameters
+        ----------
+        binsize : float
+            Width of the radial bins in the units set by self.beta (pixels, arcsec, kpc)
+        angle : float
+            Angular width to be ignored on each side of minor axis [deg]
+        width : float
+            Slit width. Units must be the same set by self.beta (pixels, arcsec, kpc)
+        
+        Returns
+        -------
+        self.RC_all_bin : ndarray
+            Binned rotation curve, from all pixels in the velocity map
+        self.RC_appr_bin : ndarray
+            Binned rotation curve, from the approaching side of the velocity map
+        self.RC_receed_bin : ndarray
+            Binned rotation curve, from the receeding side of the velocity map
+        self.RC_ls_bin : ndarray
+            Binned version of the long-slit rotation curve
+        
+        """
+        self.Geometry()
+        self.deproject()
+        
+        if width:
+            self.ls_rotation_curve(width)
+        
+        if angle:
+            self.mask_angle(angle)
+            
+        self.cloudy_rotation_curve()
+        self.bin_all_curves(binsize)
+        
+        
+    def plot_all_bin_curves(self,xlim=False,ylim=False,filename=False):
+        """
+        function to quickly visualize all the existent binned rotation curves.
+        
+        Parameters
+        ----------
+        xlim : tuple
+            limits for the X axis
+        xlim : tuple
+            limits for the Y axis
+        filename : str
+            Path where the resulting frame is to be stored
+            
+        """
+        
+        plt.figure()
+        plt.plot(self.RC_all_bin[:,0],self.RC_all_bin[:,1],'ok',markersize=5,label='Full rot. curve')
+        plt.plot(self.RC_appr_bin[:,0],self.RC_appr_bin[:,1],'--b',markersize=5,label='Approaching')
+        plt.plot(self.RC_receed_bin[:,0],self.RC_receed_bin[:,1],'--r',markersize=5,label='Receeding')
+        
+        if hasattr(self, "RC_ls_bin"):
+            plt.plot(self.RC_ls_bin[:,0],self.RC_ls_bin[:,1],'sg',label = 'Long-slit RC')
+        
+        plt.legend(frameon=False)
+        
+        if ylim:
+            plt.ylim(ylim)
+        if xlim:
+            plt.xlim(xlim)       
+        
+        if filename:
+            plt.savefig(filename)
+        else:
+            plt.show()
+        
+    
 
