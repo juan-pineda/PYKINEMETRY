@@ -1,2 +1,3 @@
 # PYKINEMETRY
-Biblioteca de Python para el análisis de mapas cinemáticos/fotométricos de galaxias basados en una descomposición armónica
+This is a library for velocity maps of galaxies.
+![alt text](http://www1.ynao.ac.cn/~jinhuahe/know_base/astro_objects/galaxies/M51-files/M51-Halpha-small.PNG)
