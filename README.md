@@ -6,13 +6,30 @@
                                                                              
 ```
 
-This is a library for the analysis velocity maps of the galaxies.
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/juan-pineda" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="Follow @juan-pineda on GitHub">Follow @juan-pineda</a>
 
-![alt text](http://www1.ynao.ac.cn/~jinhuahe/know_base/astro_objects/galaxies/M51-files/M51-Halpha-small.PNG)
 
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-## Headers
+## Installation 
+
+To install Pikinemetry, you should run the following command:
+```
+pip install pikinemetry
+```
+
+Depending on your device configuration you will need to install others packages on your local machine or you can save time installing conda, where all the packges used for pykinemetry are allow.
+
+
+## Usage
+
+### Project velocity map
+
+### Deproject velocity map
+
+## Wiki
+You can find more about the technical usage in the <a href="https://github.com/juan-pineda/PYKINEMETRY/wiki">wiki</a>
+
+## License
+
+
+##
