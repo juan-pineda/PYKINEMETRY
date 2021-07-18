@@ -29,8 +29,11 @@ Depending on your device configuration you will need to install others packages 
 ## Usage ⚙️
 To use the library is neccesary the data of the velocity maps. In this packge the data used are the extentensions .fits and .data
 ### Project velocity map
+<img src="https://www.eso.org/sci/publications/announcements/sciann17054/_jcr_content/abstract/image.img.png/1504005060359.png">
 
 ### Deproject velocity map
+<img src="https://thefutureofthings.com/upload/image/new-news/2009/october/first-results-from-allen-telescope-array/seti1.jpg">
+
 
 ## Wiki
 You can find more about the technical usage in the <a href="https://github.com/juan-pineda/PYKINEMETRY/wiki">wiki</a>
