@@ -40,7 +40,7 @@ You can find more about the technical usage in the <a href="https://github.com/j
 
 ## Authors ✒️
 * Juan Carlos Basto Pineda - Trabajo inicial - <a href="https://github.com/juan-pineda">Juan-pineda</a>
-* Laura - Desarrollo - <a href="https://github.com/juan-pineda">Laura</a>
+* Laura Natalia Martínez Ramírez - Desarrollo - <a href="https://github.com/LauraMR112">LauraMR112</a>
 * Jorge Alfredo Jaimes Teherán - Documentación - <a href="https://github.com/Jhosgun">Jhosgun</a>
 
 ## Credits
