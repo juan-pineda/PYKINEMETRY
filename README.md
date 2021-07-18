@@ -16,7 +16,7 @@ Pykinemetry is a python library develop to make easier the work of the astronome
 
 
 
-## Installation 
+## Installation ![GitHub Logo](/icons/galaxy.png)
 
 To install Pikinemetry, you should run the following command:
 ```
