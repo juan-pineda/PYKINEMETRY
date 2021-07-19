@@ -28,12 +28,45 @@ Depending on your device configuration you will need to install others packages 
 
 ## Usage ⚙️
 To use the library is neccesary the data of the velocity maps. In this packge the data used are the extentensions .fits and .data
-### Project velocity map
-<img src="https://www.eso.org/sci/publications/announcements/sciann17054/_jcr_content/abstract/image.img.png/1504005060359.png">
 
-### Deproject velocity map
-<img src="https://thefutureofthings.com/upload/image/new-news/2009/october/first-results-from-allen-telescope-array/seti1.jpg">
 
+<table align="center" border="0">
+<tr><td colspan="4">
+
+#### <a name="battery"></a>Galaxies - [Velocity map](https://www.vCloudInfo.com/2017/06/home-protection-from-power-outages-sort.html)<a href="https://github.com/CCOSTAN/Home-AssistantConfig#logo"><img align="right" border="0" src="https://raw.githubusercontent.com/CCOSTAN/Home-AssistantConfig/master/config/www/custom_ui/floorplan/images/branding/up_arrow.png" width="22" ></a>
+</td></tr>
+<tr><td align="center">
+
+[3 Prong UPS](https://amzn.to/2HJerU8)
+</td><td align="center">
+
+[2 Prong UPS](https://amzn.to/2CijVG3)
+</td><td align="center" colspan="2">
+
+[Tesla Powerwall 2](https://www.vCloudInfo.com/2018/01/going-green-to-save-some-green-in-2018.html)</td></tr>
+<tr><td align="center"><a href="https://www.amazon.com/APC-Back-UPS-Battery-Protector-BE425M/dp/B01HDC236Q/ref=as_li_ss_il?s=electronics&ie=UTF8&qid=1519445552&sr=1-2&keywords=apc+450&linkCode=li2&tag=vmw0a-20&linkId=efbdf7bdfad7bd607e099d34bd1f2688" target="_blank"><img border="0" src="https://thefutureofthings.com/upload/image/new-news/2009/october/first-results-from-allen-telescope-array/seti1.jpg" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=vmw0a-20&l=li2&o=1&a=B01HDC236Q" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</td>
+ <td align="center"><a href="https://www.amazon.com/gp/product/B00KH07WRC/ref=as_li_ss_il?ie=UTF8&psc=1&linkCode=li2&tag=vmw0a-20&linkId=52a63711f582d1ff83f4687137a6154b" target="_blank"><img border="0" src="https://thefutureofthings.com/upload/image/new-news/2009/october/first-results-from-allen-telescope-array/seti1.jpg" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=vmw0a-20&l=li2&o=1&a=B00KH07WRC" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</td>
+ <td align="center"><a href="https://www.vCloudInfo.com/2018/01/going-green-to-save-some-green-in-2018.html" target="_blank"><img border="0" src="https://thefutureofthings.com/upload/image/new-news/2009/october/first-results-from-allen-telescope-array/seti1.jpg" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=vmw0a-20&l=li2&o=1&a=B01HDC236Q" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</td>
+</tr>
+
+<tr><td colspan="4">
+There aren't really automations for the Batteries yet.  Electricity is the life blood for the house and only really the Tesla Battery has smarts so maybe in the future, you'll see a Powerwall automation in this space.  But be sure to check out the  Videos below:
+<details>
+  <summary>How To Port Forward Home Assistant on Arris TG1682</summary><p align="center">
+  <a href=https://www.vcloudinfo.com/2018/11/port-forwarding-on-arris-tg1682-modem.html>
+  Write Up and YouTube Video</a><br>
+</details>
+<details>
+  <summary>Adding Powerwall Sensors to Home Assistant</summary><p align="center">
+ 
+[![Adding Powerwall Sensors to Home Assistant](https://raw.githubusercontent.com/CCOSTAN/Home-AssistantConfig/master/config/www/custom_ui/floorplan/images/youtube/Adding%20Powerwall%20Sensors%20to%20Home%20Assistant.jpeg)](https://youtu.be/KHaLddx5wPg "Adding Powerwall Sensors to Home Assistant")
+
+</details>
+</td></tr>
+</table>
 
 ## Wiki
 You can find more about the technical usage in the <a href="https://github.com/juan-pineda/PYKINEMETRY/wiki">wiki</a>
