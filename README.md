@@ -65,6 +65,11 @@ There aren't really automations for the Batteries yet.  Electricity is the life 
 [![Velocity maps](https://i.ytimg.com/vi/Ya38Ie20XxA/maxresdefault.jpg)](https://www.youtube.com/watch?v=o_0oB9CHvjc&ab_channel=ProfessorPaulRobinson "Adding Powerwall Sensors to Home Assistant")
 
 </details>
+<details>
+  <summary>Optimization</summary><p align="center">
+  <a href=https://www.vcloudinfo.com/2018/11/port-forwarding-on-arris-tg1682-modem.html>
+  Write Up and YouTube Video</a><br>
+</details>
 </td></tr>
 </table>
 
@@ -75,6 +80,9 @@ You can find more about the technical usage in the <a href="https://github.com/j
 * Juan Carlos Basto Pineda - Trabajo inicial - <a href="https://github.com/juan-pineda">Juan-pineda</a>
 * Laura Natalia Martínez Ramírez - Desarrollo - <a href="https://github.com/LauraMR112">LauraMR112</a>
 * Jorge Alfredo Jaimes Teherán - Documentación - <a href="https://github.com/Jhosgun">Jhosgun</a>
+
+## Contact
+Juan Carlos Basto Pineda - jcbastop@correo.uis.edu.co
 
 ## Credits
 Special thanks to the Universidad Industrial de Santnader and the physics department, thanks to them the realization of this work has been possible.
